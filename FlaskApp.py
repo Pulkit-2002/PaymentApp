@@ -20,7 +20,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_SECRET_KEY'] = 'your-secret-key'  # Change this to a secure key
+app.config['JWT_SECRET_KEY'] = 'your-secret-key'  # we can also change this to a secure key
 db = SQLAlchemy(app)
 jwt = JWTManager(app)
 
