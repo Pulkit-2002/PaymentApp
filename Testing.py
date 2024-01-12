@@ -31,7 +31,7 @@ class TestApp:
         response = self.app.get('/')
         assert b'Welcome to My App' in response.data
 
-    # Add more integration tests as needed
+    # We can add more integration tests as needed
 pytest test_app.py
 
 
